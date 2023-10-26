@@ -1,8 +1,4 @@
 asgiref==3.6.0
 Django==4.2.1
 django-environ==0.11.2
-<<<<<<< HEAD
 sqlparse==0.4.4
-=======
-sqlparse==0.4.4
->>>>>>> d53533ea0ec60057224f6a0f1c2bbf1c0d97c39d
