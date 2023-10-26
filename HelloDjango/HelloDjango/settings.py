@@ -33,7 +33,7 @@ SECRET_KEY = env('SECRET_KEY')
 ###DEBUG = False
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = ['rekroot.ru']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
