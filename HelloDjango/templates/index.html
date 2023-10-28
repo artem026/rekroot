@@ -1,11 +1,19 @@
 {% extends 'layout.html' %}
 
-{% block title %}Главная страница{% endblock %}
+{% block title %}{{ title }}{% endblock %}
 
 {% block content %}
     <div class="features">
-        <h1>Главная страница</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, asperiores suscipit quod officiis repellat sapiente dicta distinctio eos, qui rerum ullam? Ducimus iusto autem nostrum dolor animi unde, vitae dicta!</p>
+        <h1>{{ title }}</h1>
+        <p>На сайте представлена простая информация, которая сможет помочь в решении различных задач</p>
         <button class="btn btn-warning">На страницу про нас</button>
+
+        {% for el in values %}
+            <p>{{ el }}</p>
+        {% endfor %}
+
+        {% for el in obj %}
+            <p>{{ el }}</p>
+        {% endfor %}
     </div>
 {% endblock %}
