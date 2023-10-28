@@ -34,7 +34,7 @@ aside ul {
     list-style: none;
 }
 
-aside li {
+aside ul li {
     color: #fff;
     display: block;
     margin-top: 20px;

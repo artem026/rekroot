@@ -20,6 +20,6 @@ from myapp1.views import index_page, about_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index_page),
-    path('about/', about_page)
+    path('', index_page, name='home'),
+    path('about/', about_page, name='about')
 ]
