@@ -6,7 +6,11 @@
     <div class="features">
         <h1>Новости на сайте</h1>
 
-        <p>На сайте представлена простая информация, которая сможет помочь в решении различных задач</p>
-        <button class="btn btn-warning">На страницу про нас</button>
+        {% for el in news %}
+            <div>
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.anons|upper }}</p>
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}
