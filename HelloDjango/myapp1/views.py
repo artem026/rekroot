@@ -5,9 +5,9 @@ def index_page(request):
         'title': 'Главная страница',
         'values': ['Some', 'Hello', '123'],
         'obj': {
-            'car': 'BMW',
-            'age': 18,
-            'hobby': 'Football'
+            'job': 'BMW',
+            'for': 18,
+            'you': 'Football'
         }
     }
     return render(request, 'index.html', data)
