@@ -12,7 +12,7 @@ def news_create(request):
         form = ArticlesForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('news_home')
+            return redirect('home')
         else:
             error = 'Заполните форму правильно'
 
