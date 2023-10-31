@@ -8,7 +8,7 @@ def news_home(request):
 
 def news_create(request):
     error = ''
-    if request.method == 'Post':
+    if request.method == 'POST':
         form = ArticlesForm(request.POST)
         if form.is_valid():
             form.save()
