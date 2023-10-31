@@ -5,6 +5,10 @@
 {% block content %}
     <div class="features">
         <h1>Создание статьи</h1>
-        
+        {% csrf_token %}
+        {{ form }}
+
+
+        <button class="btn btn-success" type="submit">Добавить статью</button>
     </div>
 {% endblock %}
