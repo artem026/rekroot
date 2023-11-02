@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 
 def index_page(request):
     data = {
@@ -13,6 +14,7 @@ def index_page(request):
     }
     return render(request, 'index.html', data)
 
+@login_required
 def about_page(request):
     return render(request, 'about.html')
 
