@@ -5,6 +5,7 @@
 {% block content %}
     <div class="features">
         <h1>{{ title }}</h1>
+        <h3>{{ request.user }}</h3>
         <p>Лучшие вакансии Вашего региона</p>
         <a href="{% url 'news_home' %}"><button class="btn btn-warning">Найти вакансию</button></a>
 
