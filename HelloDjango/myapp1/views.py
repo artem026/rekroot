@@ -28,4 +28,5 @@ def user_login(request):
 
 
 def user_logout(request):
-    pass
+    logout(request)
+    return redirect('login')
