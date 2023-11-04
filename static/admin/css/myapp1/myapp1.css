@@ -16,6 +16,12 @@ body {
     justify-content: space-between;
 }
 
+.header-nav {
+    font-weight: 500;
+    color: #fff;
+
+}
+
 aside {
     float: left;
     background: #181818;
