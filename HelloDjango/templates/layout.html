@@ -16,8 +16,21 @@
         <div class="conainer">
             <div class="header-row">
                 <div class="header-logo">LOGO</div>
-                <div class="header-nav">NAV</div>
-                <div class="header-login">LOGIN</div>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="#">Solution</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </nav>
+                <div class="header-login">
+                    {% if request.user.is_authenticated %}
+                    <a href="{% url 'logout' %}">{{ request.user }} Выйти</a>
+                    {% else %}
+                    <a href="{% url 'login' %}">Войти</a>
+                    {% endif %}
+                    <a href="#">Start Trial</a>
+                </div>
             </div>
         </div>
     </header>
