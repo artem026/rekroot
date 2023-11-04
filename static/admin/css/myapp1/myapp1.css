@@ -2,6 +2,12 @@ body {
     background: #2c2c2c;
 }
 
+.header {
+    background: #181818;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
 aside {
     float: left;
     background: #181818;
