@@ -19,7 +19,14 @@ body {
 .header-nav {
     font-weight: 500;
     color: #fff;
+}
 
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav li + li {
+    margin-left: 70px;
 }
 
 aside {
