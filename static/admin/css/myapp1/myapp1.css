@@ -30,6 +30,14 @@ body {
     margin-left: 70px;
 }
 
+.header-nav a {
+    transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+    color: #eb5959;
+}
+
 aside {
     float: left;
     background: #181818;
