@@ -4,14 +4,16 @@ body {
 
 .header {
     background: #181818;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #4d4d4d;
     color: #fff;
 }
 
 .header-row {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 aside {
