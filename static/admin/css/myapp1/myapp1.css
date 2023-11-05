@@ -122,7 +122,8 @@ main .features p {
 }
 
 form {
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    align-items: center;
     width: 600px;
     margin-top: 50px;
 }
