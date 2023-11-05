@@ -76,6 +76,7 @@ aside h3 {
 
 aside ul {
     list-style: none;
+    text-decoration: none;
 }
 
 aside ul li {
