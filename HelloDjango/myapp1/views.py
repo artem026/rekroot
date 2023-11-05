@@ -18,6 +18,10 @@ def index_page(request):
 def about_page(request):
     return render(request, 'about.html')
 
+@login_required
+def top_list_page(request):
+    return render(request, 'news_top_list.html')
+
 def user_login(request):
     if request.POST:
         username = request.POST['username']
