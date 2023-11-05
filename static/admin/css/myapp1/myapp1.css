@@ -123,6 +123,7 @@ main .features p {
 
 form {
     /* margin-left: 10%; */
+    display: flex;
     align-items: center;
     width: 600px;
     margin-top: 50px;
