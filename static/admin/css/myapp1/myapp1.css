@@ -86,6 +86,10 @@ aside ul li {
     text-decoration: none;
 }
 
+adide ul a {
+    text-decoration: none;
+}
+
 aside ul li:hover, aside ul a:hover {
     color: #eb5959;
     text-decoration: none;
