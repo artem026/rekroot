@@ -25,7 +25,7 @@
                 </nav>
                 <div class="header-login">
                     {% if request.user.is_authenticated %}
-                    <h3>{{ request.user }}</h3>
+                    <span>{{ request.user }}</span>
                     <a href="{% url 'logout' %}">Выйти</a>
                     {% else %}
                     <a href="{% url 'login' %}">Войти</a>
