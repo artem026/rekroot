@@ -113,14 +113,13 @@ main .features p {
     margin: 20px auto;
 }
 
-.news_vacancy {
+.alert-info {
     float: left;
     clear: both;
     width: 800px;
     margin: 20px 20%;
     text-align: left;
     text-decoration: none;
-    background: #c68b8b;
 }
 
 .alert {
