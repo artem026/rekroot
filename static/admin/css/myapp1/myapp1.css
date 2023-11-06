@@ -113,7 +113,7 @@ main .features p {
     margin: 20px auto;
 }
 
-.alert-info {
+.alert-primary {
     float: left;
     clear: both;
     width: 800px;
