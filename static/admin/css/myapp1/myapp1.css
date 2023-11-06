@@ -119,6 +119,7 @@ main .features p {
     width: 800px;
     margin: 20px 20%;
     text-align: left;
+    text-decoration: none;
 }
 
 form {
