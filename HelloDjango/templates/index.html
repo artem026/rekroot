@@ -5,12 +5,6 @@
 {% block content %}
     <div class="features">
         <h1>{{ title }}</h1>
-        {% if request.user.is_authenticated %}
-        <h3>{{ request.user }}</h3>
-        <a class="user-case" href="{% url 'logout' %}">Выйти</a>
-        {% else %}
-        <a class="user-case" href="{% url 'login' %}">Войти</a>
-        {% endif %}
         <p>Лучшие вакансии Вашего региона</p>
         <a href="{% url 'news_home' %}"><button class="btn btn-warning">Найти вакансию</button></a>
 
