@@ -1,10 +1,10 @@
 {% extends 'layout.html' %}
 
-{% block title %}Создание статьи{% endblock %}
+{% block title %}Создание вакансии{% endblock %}
 
 {% block content %}
     <div class="features">
-        <h1>Создание статьи</h1>
+        <h1>Создание вакансии</h1>
         <form method="post">
             {% csrf_token %}
             {{ form.title }}<br>
