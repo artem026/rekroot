@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 
 def index_page(request):
     data = {
-        'title': 'Главная страница',
+        'title': 'Работа мечты',
         'values': ['Some', 'Hello', '123'],
         'obj': {
             'job': 'BMW',
