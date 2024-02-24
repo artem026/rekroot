@@ -31,3 +31,8 @@ def news_create(request):
         'error': error
         }
     return render(request, 'news_create.html', data)
+
+
+def news_pagination(request):
+    news = Articles.objects.order_by('-date')
+    return render(request, 'news_pagination.html', {'news': news})

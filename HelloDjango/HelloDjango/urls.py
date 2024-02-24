@@ -25,5 +25,6 @@ urlpatterns = [
     path('news/', include('news.urls')),
     path('login/', user_login, name='login'),
     path('logout/', user_logout, name='logout'),
-    path('top_list/', top_list_page, name='top_list')
+    path('top_list/', top_list_page, name='top_list'),
+    path('pagination/', top_list_page, name='pagination')
 ]
