@@ -19,12 +19,16 @@
         <!-- {% for contact in page_object %}
             <p>{{ contact }}</p>
         {% endfor%} -->
-        <nav>
+        <nav class="list-pages">
             <ul>
                 {% for p in page_object.paginator.page_range %}
-                <li>
+                {% if page_object.number == p %}
+                <li class="page-num page-num-selected">
+                {% else %}
+                <li class="page-num">
                     <a href="?page={{ p }}">{{ p }}</a>
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </nav>
