@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from myapp1.views import index_page, about_page,top_list_page, user_login, user_logout
+from myapp1.views import index_page, about_page,top_list_page, user_login, user_logout, news_pagination
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +25,5 @@ urlpatterns = [
     path('news/', include('news.urls')),
     path('login/', user_login, name='login'),
     path('logout/', user_logout, name='logout'),
-    path('top_list/', top_list_page, name='top_list'),
-    path('pagination/', top_list_page, name='pagination')
+    path('top_list/', top_list_page, name='top_list')
 ]
