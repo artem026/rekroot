@@ -16,5 +16,8 @@
         {% else %}
             <p>Новостей нет</p>
         {% endif %}
+        {% for contact in page_object %}
+            <p>{{ contact }}</p>
+        {% endfor%}
     </div>
 {% endblock %}
