@@ -19,6 +19,7 @@
         <!-- {% for contact in page_object %}
             <p>{{ contact }}</p>
         {% endfor%} -->
+        {% if page_object.has_other_pages %}
         <nav class="list-pages">
             <ul>
                 {% for p in page_object.paginator.page_range %}
@@ -32,5 +33,6 @@
                 {% endfor %}
             </ul>
         </nav>
+        {% endif %}
     </div>
 {% endblock %}
