@@ -3,6 +3,7 @@ from . models import Articles
 from . forms import ArticlesForm
 from django.views.generic import DetailView
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 
 def news_home(request):
     news = Articles.objects.order_by('-date')
@@ -35,4 +36,8 @@ def news_create(request):
 
 def news_pagination(request):
     news = Articles.objects.order_by('-date')
-    return render(request, 'news_pagination.html', {'news': news})
+    paginator = Paginator(news, 3)
+
+    page_number = request.GET.get('page')
+    page_object = paginator.get_page(page_number)
+    return render(request, 'news_pagination.html', {'page_object':page_object,'news': news})
