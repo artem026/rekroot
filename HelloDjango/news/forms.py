@@ -23,7 +23,7 @@ class ArticlesForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Описание вакансии'
             }),
-            'salary': Textarea(attrs={
+            'salary': TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Зарплата'
             }),
