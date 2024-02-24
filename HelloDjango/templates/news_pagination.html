@@ -23,7 +23,7 @@
             <ul>
                 {% for p in page_object.paginator.page_range %}
                 {% if page_object.number == p %}
-                <li class="page-num page-num-selected">
+                <li class="page-num page-num-selected">{{ p }}</li>
                 {% else %}
                 <li class="page-num">
                     <a href="?page={{ p }}">{{ p }}</a>
