@@ -19,5 +19,14 @@
         {% for contact in page_object %}
             <p>{{ contact }}</p>
         {% endfor%}
+        <nav>
+            <ul>
+                {% for p in page_object.paginator.page_range %}
+                <li>
+                    <a href="?page={{ p }}">{{ p }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
     </div>
 {% endblock %}
