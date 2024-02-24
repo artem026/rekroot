@@ -36,7 +36,7 @@ def news_create(request):
 
 def news_pagination(request):
     news = Articles.objects.order_by('-date')
-    paginator = Paginator(news, 3)
+    paginator = Paginator(news, 5)
 
     page_number = request.GET.get('page')
     page_object = paginator.get_page(page_number)
