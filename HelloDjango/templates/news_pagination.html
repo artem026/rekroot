@@ -22,6 +22,11 @@
         {% if page_object.has_other_pages %}
         <nav class="list-pages">
             <ul>
+                {% if page_object.has_previous %}
+                <li class="page-num">
+                    <a href="?page={{ page_object.previous_page_number }}">&lt;</a>
+                </li>
+                {% endif %}
                 {% for p in page_object.paginator.page_range %}
                 {% if page_object.number == p %}
                 <li class="page-num page-num-selected">{{ p }}</li>
@@ -31,6 +36,11 @@
                 </li>
                 {% endif %}
                 {% endfor %}
+                {% if page_object.has_next %}
+                <li class="page-num">
+                    <a href="?page={{ page_object.next_page_number }}">&gt;</a>
+                </li>
+                {% endif %}
             </ul>
         </nav>
         {% endif %}
