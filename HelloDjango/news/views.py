@@ -16,7 +16,6 @@ class NewsDetailView(DetailView):
     context_object_name = 'article'
 
 
-@login_required
 class NewsUpdateView(UpdateView):
     model = Articles
     template_name = 'news_create.html'
