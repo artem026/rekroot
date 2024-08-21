@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from . models import Articles
 from . forms import ArticlesForm
-from django.views.generic import DetailView
+from django.views.generic import DetailView, UpdateView
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 
@@ -14,6 +14,13 @@ class NewsDetailView(DetailView):
     model = Articles
     template_name = 'news_details.html'
     context_object_name = 'article'
+
+
+class NewsUpdateView(UpdateView):
+    model = Articles
+    template_name = 'news_create.html'
+    form_class = ArticlesForm
+
 
 @login_required
 def news_create(request):
