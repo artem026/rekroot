@@ -27,5 +27,5 @@ urlpatterns = [
     path('login/', user_login, name='login'),
     path('logout/', user_logout, name='logout'),
     path('top_list/', top_list_page, name='top_list'),
-    path('pagination/', news_pagination, name='news_pagination')
+    path('pagination/', news_pagination, name='news_home')
 ]
