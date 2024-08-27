@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from myapp1.views import index_page, about_page,top_list_page, user_login, user_logout
-from news.views import news_pagination
+# from news.views import news_pagination
 
 urlpatterns = [
     path('admin/', admin.site.urls),
