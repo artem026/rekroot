@@ -14,13 +14,13 @@
         <div class="alert alert-warning">
             <p>{{ article.date }}</p>
         </div>
-        <!-- <div class="alert alert-warning">
-            <a href="{% url 'news_update' %}" class="btn btn-warning">Редактировать</a>
-        </div> -->
-        {% for el in page_object %}
+        <div class="alert alert-warning">
+            <a href="{% url 'news_update' article.id %}" class="btn btn-warning">Редактировать</a>
+        </div>
+        <!-- {% for el in page_object %}
             <div class="alert alert-warning">
                 <a href="{% url 'news_update' el.id %}" class="btn btn-warning">Подробнее</a>
             </div>
-        {% endfor %}
+        {% endfor %} -->
     </div>
 {% endblock %}
