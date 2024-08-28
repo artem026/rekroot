@@ -6,7 +6,7 @@
     <div class="features">
         <h1>{{ title }}</h1>
         <p>Лучшие вакансии Вашего региона</p>
-        <a href="{% url 'news_home' %}"><button class="btn btn-warning">Найти вакансию</button></a>
+        <a href="{% url 'news_pagination' %}"><button class="btn btn-warning">Найти вакансию</button></a>
 
         {% for el in values %}
             {% if el == 'hello' %}
