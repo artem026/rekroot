@@ -14,5 +14,8 @@
         <div class="alert alert-warning">
             <p>{{ article.date }}</p>
         </div>
+        <div class="alert alert-warning">
+            <a href="{% url 'news_update' el.id %}" class="btn btn-warning">Редактировать</a>
+        </div>
     </div>
 {% endblock %}
