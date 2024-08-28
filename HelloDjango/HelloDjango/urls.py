@@ -23,8 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_page, name='home'),
     path('about/', about_page, name='about'),
-    # path('news/', include('news.urls')),
-    path('pagination/', include('news.urls')),
+    path('news/', include('news.urls')),
+    # path('pagination/', include('news.urls')),
     path('login/', user_login, name='login'),
     path('logout/', user_logout, name='logout'),
     path('top_list/', top_list_page, name='top_list')
