@@ -3,7 +3,7 @@ from . models import Articles
 from . forms import ArticlesForm
 from django.views.generic import DetailView, UpdateView
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.paginator import Paginator
 
 def news_home(request):
@@ -17,10 +17,11 @@ class NewsDetailView(DetailView):
     context_object_name = 'article'
 
 
-class NewsUpdateView(LoginRequiredMixin, UpdateView):
+class NewsUpdateView(PermissionRequiredMixin, LoginRequiredMixin, UpdateView):
     model = Articles
     template_name = 'news_create.html'
     form_class = ArticlesForm
+    permission_required = 'news.add_articles'
 
 
 @login_required
